@@ -4,8 +4,8 @@ import { getPosts, createPost, updatePost, deletePost } from "../controllers/pos
 
 const router = express.Router();
 
-router.get( "/", getPosts) ;
-router.post( "/", createPost );
+router.get("/", getPosts);
+router.post("/", createPost);
 router.patch("/:id", updatePost);
 router.delete("/:id", deletePost);
 
